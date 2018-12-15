@@ -1,0 +1,96 @@
+<html>
+ <style>
+h1{
+	color: #330000;
+}
+button
+	{
+     background-color:#004d00;
+     color:black;
+     transition:all 0.2s ease-in-out;
+     width:100px;
+     height:50px;
+     font-size:25px;
+     border-color: black;
+	}
+	button:hover{
+		background-color: #b30000;
+		color:black;
+		border-color: black;
+	}
+	
+#text{
+	color:#1a0000;
+    margin-bottom:10px;
+    font-size: 25px; 
+}
+body{
+	background-color: #b30000;
+}
+dt{
+	color:#660000;
+	font-size:30px;
+}
+dd{
+color:#1a0000;
+font-size:25px;
+}
+a{
+	font-style: bold;
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	color:#e6e600;
+
+}
+
+
+ </style>
+
+
+<body>
+	<center>
+       <h1>Ferrari</h1>
+       <div id="text">
+	    Welcome to Ferrari.Here I Present the most famous models of Ferrari from 1947's to 2017.
+       </div>
+       <img id="cars" width=300px height=150px src="ferrari.png">
+        <p>
+         <iframe id="first" width="560" height="315" src="https://www.youtube.com/embed/mpwW4m8JiUo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </p>
+    
+        <dl>
+        	<dt>1900's Models</dt>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_250">1957 Ferrari 250 GT California</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_250">1957 Ferrari 250 TR</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_250_GTO">1962 Ferrari 250 GTO</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_288_GTO">1984 Ferrari 288 GTO</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_F40">1987 Ferrari F40</a></dd>
+        	 <br>
+         	<dt>2000's Models</dt>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Enzo_Ferrari_(automobile)">2002 Ferrari F60 Enzo</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_F430">2004 Ferrari F430 Scuderia</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_F12">2013 Ferrari Mansory F12 La Revoluzione</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/LaFerrari">2013 F70 LaFerrari</a></dd>
+        	 <dd><a href="https://en.wikipedia.org/wiki/Ferrari_458">2013 Ferrari 458 Italia Speciale</a></dd>
+        </dl>
+        
+        <p>
+         <button  onclick="gotoPrevious()"> Back </button>
+         <button  onclick="gotoNext()"> Next </button>
+        </p>
+        <script>
+        function gotoNext() {
+        document.getElementById('first').src='https://www.youtube.com/embed/iRsV6YpLsKA';
+        }
+        function gotoPrevious(){
+        document.getElementById('first').src ='https://www.youtube.com/embed/mpwW4m8JiUo' ;
+
+}
+        </script>
+
+    </center>
+    <footer>Copyrights @ Kritin Kondru</footer>
+</body>
+</html>
